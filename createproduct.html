@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | create Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="brand"> Shopping Cart </a>
+          <nav>
+            <ul id="links">
+              <li><a href="login.html">Sign In</a></li>
+              <li><a href="register.html">Sign Up</a></li>
+            </ul>
+            <ul id="user_info">
+              <li><a href="#" id="user"></a></li>
+              <li><a href="#" id="sign_out">Log Out</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="create-product-page">
+      <form action="" id="product-create-form">
+        <input type="file" id="product-file" />
+        <input type="text" placeholder="name" id="product-name" />
+        <input type="text" placeholder="desc" id="product-desc" />
+        <select
+          name=""
+          id="product-size"
+          style="
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #333;
+            margin: 10px 0;
+            outline: 0;
+            font-weight: bold;
+          "
+        >
+          <option hidden>SIZE</option>
+          <option value="small">small</option>
+          <option value="medium">medium</option>
+          <option value="large">large</option>
+        </select>
+        <input type="submit" value="create" />
+      </form>
+    </section>
+    <script src="js/user.js"></script>
+
+    <script src="js/data.js"></script>
+
+    <script src="js/createproduct.js"></script>
+  </body>
+</html>
